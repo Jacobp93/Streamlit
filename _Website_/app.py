@@ -1,26 +1,28 @@
 
-from pathlib import Path 
+from pathlib import Path
 import streamlit as st
-from PIL import Image 
+from PIL import Image
 # Path
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir /"assets" / "CV.pdf"
+resume_file = current_dir / "assets" / "CV.pdf"
 profile_pic = current_dir / "assets" / "profile-pic.jpg"
 
 # Stream lit Settings
-PAGE_TITLE = "Digital CV | Jacob Pointon" 
+PAGE_TITLE = "Digital CV | Jacob Pointon"
 PAGE_ICON = ":wave:"
 NAME = "Jacob Pointon"
 DESCRIPTION = """
-Loml loml loml loml
+A short description about myself! i'm a highly curious individual whom has an apptitude to be at the forefront of tech & innovation, 
+my personal interests include reading , running , political science , history & economcis. Please find a link to my Github and Linkedin below. 
 """
+
 EMAIL = "Jacobp1997@live.co.uk"
 SOCIAL_MEDIA = {
-    "Linkedin": "https://www.linkedin.com/in/jacob-pointon-722399207/" ,
+    "Linkedin": "https://www.linkedin.com/in/jacob-pointon-722399207/",
     "GitHub":  "https://github.com/Jacobp93"
 }
-PROJECTS ={
+PROJECTS = {
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
@@ -32,7 +34,7 @@ with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
 #
-col1 , col2 = st.columns(2, gap="small")
+col1, col2 = st.columns(2, gap="small")
 with col1:
     st.image(profile_pic, width=230)
 with col2:
@@ -43,7 +45,7 @@ with col2:
         data=PDFbyte,
         file_name=resume_file.name,
         mime="applications/ocet-stream",
-)
+    )
     st.write(" ", EMAIL)
 # --- SOCIAL LINKS ---
 st.write('\n')
@@ -92,7 +94,7 @@ st.write(
 # --- JOB 2
 st.write('\n')
 st.write("🚧", "**Application Support / Data Management | Leeds City Council (Education Sector) **")
-st.write("01/2018 - 02/2022")
+st.write("02/2020 - 07/2021")
 st.write(
     """
 - ► Application Help Desk Support for 7 different applications, Problem Solving and presenting a solution to the end user  
@@ -103,7 +105,7 @@ st.write(
 # --- JOB 3
 st.write('\n')
 st.write("🚧", "**Administrative Officer | Leeds City Council (Education Sector) **")
-st.write("04/2015 - 01/2018")
+st.write("03/2017 - 02/2020")
 st.write(
     """
 - ► Monitoring a team email inbox , carrying out admin duties to facilitate support for SEN Children and Parents 
@@ -122,4 +124,3 @@ st.write(
 - ► 
 """
 )
-
