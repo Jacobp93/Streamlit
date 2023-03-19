@@ -115,12 +115,12 @@ st.write(
 )
 
 # --- Projects & Accomplishments ---
-st.write('\n')
-st.subheader("Professional Goals")
-st.write(
-    """
-- ► 
-- ► 
-- ► 
-"""
-)
+#st.write('\n')
+#st.subheader("Professional Goals")
+#st.write(
+ #   """
+#- ► 
+#- ► 
+#- ► 
+#"""
+#)
