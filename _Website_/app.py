@@ -58,7 +58,8 @@ st.write('\n')
 st.subheader("Experience & Qualifications")
 st.write(
     """
-- ✔️ 2 Years Experience in Data Management roles 
+- ✔️ 2 Years Experience in Data Management / IT app support 
+- ✔️ 3 Years Experience in Business Administration roles
 - ✔️ Strong hands on experience in SQL , Application Support , Python  
 - ✔️ Good understanding and exposure to Business Strategy , Marketing , Sales 
 - ✔️ Excellent team-player and creative innovator 
